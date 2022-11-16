@@ -21,7 +21,6 @@ function onFormSubmit(e) {
   dataFromStorage = JSON.parse(localStorage.getItem(STORAGE_FORM_DATA));
   if (dataFromStorage) {
     console.log(dataFromStorage);
-    dataFromStorage = null;
   }
   localStorage.removeItem(STORAGE_FORM_DATA);
   e.currentTarget.reset();
